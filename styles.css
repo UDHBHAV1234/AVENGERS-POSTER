@@ -1,0 +1,209 @@
+body{
+margin: 0% ;
+padding: 0%;
+}
+
+body {
+  width: 100%;
+  height: 70%;
+  background:whitesmoke;
+  font-family: 'Aclonica', sans-serif;
+  background-image: url(https://images.hdqwalls.com/wallpapers/poster-avengers-endgame-2019-ps.jpg);
+  background-size: 100% 300%;
+}
+
+
+.animation {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-bottom: 5px solid Orgb (255, 1, 0);
+  border-radius: 10px;
+  top:65%;
+  left:50%;
+  transform: translate(50%)
+}
+
+h1{
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate (-50%, -50%);
+  text-transform: uppercase;
+  color:#ffffff; 
+  font-size: 80px; 
+  padding: 10px 20px;
+  transition:1s;
+  opacity: 0;
+}
+
+.animation:hover h1{
+  color:black ;
+  left: 23%;
+  text-shadow: 0 0 5px ■ #ffffff ,0 0 10px ■#ffffff,0 0 15px ■#ffffff;
+  transform: translate(-50%, -50%) rotateY (360deg) scale(2);
+  animation: blink 2s linear infinite;
+  opacity: 1;
+}
+
+p{
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  transform:translateX(-50%);
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ffffff; 
+  transition: 5s;
+}
+
+.animation:hover p{
+   left: 75%;
+   animation: blink 2s linear infinite;
+}
+
+
+/* Additional styles for the options container */
+.options-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.options-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options-container li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.options-container li:last-child {
+  margin-right: 0;
+}
+
+.options-box {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.options-box:hover {
+  background-color: #fff;
+  color: #333;
+  animation: blink 2s linear infinite;
+}
+
+
+
+
+.summary-container {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.summary-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color:purple;
+  text-transform: uppercase;
+  /* Add shiny text effect */
+  text-shadow: 0 0 5px purple, 0 0 10px purple, 0 0 15px purple;
+  animation: shine 2s infinite;
+}
+
+.summary-container p {
+  font-size: 18px;
+  color: BLACK;
+  line-height: 1.6;
+  /* Add bold effect */
+  font-weight: bold;
+}
+
+.summary-container p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.summary-container p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+  /* Add bold effect */
+  font-weight: bold;
+  /* Add shiny text effect */
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+  animation: shine 2s infinite;
+}
+
+
+/* Shiny text animation */
+@keyframes shine {
+  0% {
+      text-shadow: 0 0 5px BLACK, 0 0 10px black, 0 0 15px black;
+  }
+  50% {
+      text-shadow: 0 0 15px purple, 0 0 20px purple, 0 0 25px purple;
+  }
+  100% {
+      text-shadow: 0 0 5px #ff0100, 0 0 10px #ff0100, 0 0 15px #ff0100;
+  }
+}
+  
+
+
+/* Shiny text animation */
+@keyframes shine {
+  0% {
+   text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    }
+  50% {
+   text-shadow: 0 0 15px black, 0 0 20px black 0 0 25px black;
+   }
+  100% {
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+   }
+}
+          
+@keyframes blink {
+     0%, 100% {
+     background-color: #fff;
+     color: #333;
+    }
+    50% {
+    background-color: #333;
+    color: #fff;
+    }
+}
+          
+@keyframes blink {
+  0% {
+  text-shadow: 0 0 0 ■#ffffff;
+  color:black;
+  }
+  40%{
+   text-shadow: 0 0 0 #ffffff;
+  }
+  50%{
+   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+  color: black;
+  }
+  }
+
+          
